@@ -22,8 +22,8 @@ let quotes = [
   },
   {
     source: "Louisa May Alcott",
-    quote: "I am not afraid of storms, for I am learning how to sail my ship."
-    citation: "Little Women"
+    quote: "I am not afraid of storms, for I am learning how to sail my ship.",
+    citation: "Little Women",
     year: "1869"
 
   },
@@ -55,6 +55,9 @@ let quotes = [
  * `getRandomQuote` function
 ***/
 
+// This function getRandomQuote will create a random number which will correlate with the arrays above to choose a random quote
+
+
 const getRandomQuote = () => {
    const randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
@@ -64,6 +67,8 @@ const getRandomQuote = () => {
 /***
  * `printQuote` function
 ***/
+// 1. getRandomQuote function, 2. use returned quote to use as html and quote properties 3. strig will display in browser
+
 
 const printQuote = () => {
   let random = getRandomQuote();
