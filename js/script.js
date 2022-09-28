@@ -76,10 +76,10 @@ const printQuote = () => {
   let html = `<p class= "quote" > ${random.quote}</p> 
               <p class= "source" >${random.source}`
                 if(random.citation !== undefined){
-                  html += `span class = "citation"> ${random.citation}</span>`
+                  html += `<span class = "citation"> ${random.citation}</span>`
                 }
                 if (random.year !== undefined){
-                  html += `span class = "year"> ${random.year}</span>`
+                  html += `<span class = "year"> ${random.year}</span>`
                 }
                 `</p>`
   document.getElementById('quote-box').innerHTML = html; 
